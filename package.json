@@ -1,6 +1,7 @@
 {
   "name": "nuxt-custom-routes",
   "dependencies": {
+    "@nuxtjs/dotenv": "^1.1.0",
     "axios": "latest",
     "nuxt": "latest"
   },

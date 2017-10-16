@@ -14,7 +14,7 @@ import axios from 'axios'
 
 export default {
   async asyncData () {
-    const { data } = await axios.get('https://jsonplaceholder.typicode.com/users')
+    const { data } = await axios.get(process.env.USERS_API)
     return {
       users: data
     }
