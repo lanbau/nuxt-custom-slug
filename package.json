@@ -2,6 +2,7 @@
   "name": "nuxt-custom-routes",
   "dependencies": {
     "@nuxtjs/dotenv": "^1.1.0",
+    "@nuxtjs/sitemap": "0.0.3",
     "axios": "latest",
     "nuxt": "latest"
   },

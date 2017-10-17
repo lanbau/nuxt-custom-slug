@@ -18,14 +18,25 @@ module.exports = {
   },
   modules: [
     // Simple usage
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    routes: function () {
+      return axios.get(process.env.PRODUCTS_API)
+      .then((res) => {
+        return res.data.map((product) => {
+          return '/products/' + product.slug
+        })
+      })
+    }
+  },
   generate: {
     routes: function () {
-      return axios.get(process.env.POSTS_API)
+      return axios.get(process.env.PRODUCTS_API)
       .then((res) => {
-        return res.data.map((post) => {
-          return '/blog/' + post.slug
+        return res.data.map((product) => {
+          return '/products/' + product.slug
         })
       })
     }
