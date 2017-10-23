@@ -18,6 +18,7 @@
 
 <script>
   export default {
+    layout: 'blog',
     head: {
       title: 'Blog'
     }
