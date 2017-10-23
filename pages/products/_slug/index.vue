@@ -28,6 +28,11 @@
         callback({ statusCode: 404, message: 'Post not found' })
       }
     },
+    head () {
+      return {
+        title: this.product.name
+      }
+    },
     methods: {
       addCount () {
         this.$store.commit('increment')

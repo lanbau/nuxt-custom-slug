@@ -6,7 +6,7 @@ module.exports = {
     vendor: ['axios']
   },
   head: {
-    titleTemplate: '%s | Awesome JS SSR Blog',
+    titleTemplate: "%s | Paula's Choice Singapore",
     // ...
     link: [
       // ...
